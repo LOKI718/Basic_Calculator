@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+</head>
+<body>
+<div class="container">
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <div class="calculator" id="calculator">
+        <form>
+            <div class="display">
+                <input type="text" name="display" id="display" class="enlarged-display">
+            </div>
+            <div>
+                <input type="button" name="AC" value="AC" onclick="clearDisplay()" class="op">
+                <input type="button" name="DE" value="DE" onclick="removeLast()" class="op">
+                <input type="button" name="." value="." onclick="addToDisplay('.')" class="op">
+                <input type="button" name="/" value="/" onclick="addToDisplay('/')" class="op">
+            </div>
+            <div>
+                <input type="button" name="9" value="9" onclick="addToDisplay('9')">
+                <input type="button" name="8" value="8" onclick="addToDisplay('8')">
+                <input type="button" name="7" value="7" onclick="addToDisplay('7')">
+                <input type="button" name="*" value="*" onclick="addToDisplay('*')" class="op">
+            </div>
+            <div>
+                <input type="button" name="6" value="6" onclick="addToDisplay('6')">
+                <input type="button" name="5" value="5" onclick="addToDisplay('5')">
+                <input type="button" name="4" value="4" onclick="addToDisplay('4')">
+                <input type="button" name="-" value="-" onclick="addToDisplay('-')" class="op">
+            </div>
+            <div>
+                <input type="button" name="3" value="3" onclick="addToDisplay('3')">
+                <input type="button" name="2" value="2" onclick="addToDisplay('2')">
+                <input type="button" name="1" value="1" onclick="addToDisplay('1')">
+                <input type="button" name="+" value="+" onclick="addToDisplay('+')" class="op">
+            </div>
+            <div>
+                <input type="button" name="00" value="00" onclick="addToDisplay('00')">
+                <input type="button" name="0" value="0" onclick="addToDisplay('0')">
+                <input type="button" name="3.14" value="π" onclick="addToDisplay('3.14')" class="theme">
+                <input type="button" name="=" value="=" onclick="calculate()" class="theme">
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
